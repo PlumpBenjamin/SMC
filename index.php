@@ -1,15 +1,3 @@
 <?php
-	include_once 'Unseeable/dbh.inc.php';
+	header( 'Location: / index.html');
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-
-$conn;
-
-</body>
-</html>
