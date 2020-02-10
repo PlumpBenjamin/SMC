@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- init -->
+<html>
+
+	<head>
+		 <title>Post</title>
+		 <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,400&display=swap" rel="stylesheet">
+		 <link rel="stylesheet" type="text/css" href="style.css">
+      	 <script src="index.js"></script>
+	</head>
+
+	<body>
+
+			<h1>Post</h1>
+
+      <!-- corner button that sends you to login page, should only appear if you are guest. Otherwise, replace with profile image and username -->
+			<button id="loginonpageBtn" onClick="gotologin();">Sign in</button>
+
+      <!-- Links to other sites in Prac -->		
+			<div class= "container">
+				<nav>
+				    <ul>
+				        <li><a href="index.html">Home</a></li>
+				        <li>POST</li>
+				        <li><a href="you.html">Your Profile</a></li>
+				    </ul>
+				</nav>
+			</div>
+			<h2>Post Picture to Show to Your Friends!</h2>
+			<p> My Pictures </p><br>
+
+      <!-- loads file -->
+
+			<input type="file"  accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
+			<label for="file">Upload Image</label><br><br><br>
+			<img id="output" width="500"/>
+
+
+      <!-- image box, should disappear once image is uploaded, not set up yet -->
+	    <div class ="image-box">
+	    	<span class="Image-box-text" id="image-box-plus" style="display:none;"> Post a Picture!</span>
+	    </div><br>
+
+      <!-- Caption for the picture, not functional, cannot save-->
+	    <textarea cols="69" rows="3" placeholder="What's going on in this picture?"></textarea>
+
+	    <br><br><br><br><br>
+
+      <!-- word posts -->
+	    <p>Tell the world about something!</p>
+
+	    <textarea cols="69" rows="10" placeholder="Write a message."></textarea><br>
+	    <button type="button" id="Post-button">Post</button>
+
+	</body>
+</html>
