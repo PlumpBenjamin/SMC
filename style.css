@@ -248,3 +248,13 @@ nav a {
 	text-transform: uppercase;
 	text-decoration: none;
 }
+
+#registeracc-button {
+	padding:10px;
+	color: white;
+	background-color: #008BFF;
+	border: 2px solid white;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 20px;
+}

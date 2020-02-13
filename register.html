@@ -5,7 +5,7 @@
 
     <!-- init -->
 
-		<title>Register a Preak account</title>
+		<title>Register a Prac account</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,400&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
         <script src="index.js"></script>
@@ -20,26 +20,27 @@
 		<div class="sign-up-form">
 
 
-      <!-- form serves no actual purpose, yet. Doesn't ave information-->
-			<form>
+      <!-- form serves no actual purpose, yet. Doesn't have information-->
+			<form action="users.php" method="POST">
         <!-- User's name -->
-				<input type="Name" class="input-box" placeholder="Full Name"><br><br>
+				<input type="name" class="input-box" name="name" placeholder="Full Name" required><br><br>
 		<!-- Username -->
-				<input type="Username" class="input-box" placeholder="Username"><br><br>
+				<input type="username" class="input-box" name="username" placeholder="Username" required><br><br>
         <!-- password -->
-				<input type="password" class="input-box" placeholder="Password"><br><br>
+				<input type="password" class="input-box" name="password" placeholder="Password" required><br><br>
         <!-- email-->
-				<input type="email" class="input-box" placeholder="Email"><br><br>
+				<input type="email" class="input-box" name="email" placeholder="Email" required><br><br>
         <!-- phone # -->
-				<input type="phone" class="input-box" placeholder="Phone Number"><br><br>
+				<input type="phone" class="input-box" name="phone" placeholder="Phone Number" required><br><br>
 
         <!-- buttons -->
         <!-- register button, acc means actual, don't know why 2 'C's'-->
-				<button type="button" id="registeracc-button">Register now</button><br><br>
+				<input type="Submit" value="Submit" id="registeracc-button"><br><br>
         <!-- sign in button, leads to sign in page-->
 				<button id="Sign-in-button"><a href="login.html" class="special">Sign in</a></button>
         <!-- sign in as guest goes to homepage, cannot post -->
 				<button id="LoginasGuest-button"><a href="index.html" class="special">Sign in as Guest</a></button>
+		<!-- submit details -->
 
 			</form>
 
