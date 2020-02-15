@@ -11,7 +11,7 @@ if (!empty($name) || !empty($username) || !empty($password) || !empty($email) ||
     $host = "localhost:80";
     $dbUsername = "root";
     $dbPassword = "";
-    $dbname = "pracdata";
+    $dbname = "users";
 
 
     //create connection
