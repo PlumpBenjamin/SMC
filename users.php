@@ -8,7 +8,7 @@ $phone = $_POST['phone'];
 
 if (!empty($name) || !empty($username) || !empty($password) || !empty($email) || !empty($phone)) {
 
- $host = "localhost";
+    $host = "localhost:80";
     $dbUsername = "root";
     $dbPassword = "";
     $dbname = "pracdata";
